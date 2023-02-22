@@ -1,0 +1,4 @@
+openai~=0.26.5
+fastapi~=0.92.0
+uvicorn
+gunicorn
