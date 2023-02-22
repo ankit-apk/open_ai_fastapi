@@ -6,7 +6,7 @@ app = FastAPI()
 openai.api_key = os.getenv("OPENAI_KEY")
 
 
-@app.get("/ask/")
+@app.get("/ask/{question}")
 async def ask_question(question: str):
     # create a completion
     completion = openai.Completion.create(
